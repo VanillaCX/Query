@@ -11,7 +11,7 @@
       QUERYCX_COLLECTION = "collection-name"
 
 ## Test Script
-Make sure you have created the .env file and installed the package (See [link](#Installation)).
+Make sure you have created the .env file and installed the package (See [Installation](#Installation)).
 
     $ npm run test
     
