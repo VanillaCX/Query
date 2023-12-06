@@ -1,16 +1,20 @@
 # QueryCX Package
 ## Installation
-1. Install Package
-  $ npm install
-2. Create .env file and add following environment variables:
-    // Required:
-    QUERYCX_CONNECTION_STRING = "mongodb://your/connection/string/here/..."
+#### Install Package
+       $ npm install
+#### Create .env file and add following environment variables:
+      // Required:
+      QUERYCX_CONNECTION_STRING = "mongodb://your/connection/string/here/..."
+  
+      // Optional (required for test scripts only)
+      QUERYCX_DATABASE = "database-name"
+      QUERYCX_COLLECTION = "collection-name"
 
-    // Optional (required for test scripts only)
-    QUERYCX_DATABASE = "database-name"
-    QUERYCX_COLLECTION = "collection-name"
-3. npm run test
+## Test Script
+Make sure you have created the .env file and installed the package (See [link](#Installation)).
 
+    $ npm run test
+    
 ## Examples
     // Import Package
     const {Query} = require("@VanillaCX/QueryCX");
