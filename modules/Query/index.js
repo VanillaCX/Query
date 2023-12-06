@@ -46,6 +46,12 @@ class Query {
         return await this.collection.countDocuments(sanitisedQuery);
     }
 
+    async exists(filter){
+        const count = await this.countDocuments(filter);
+        
+        return count > 0;
+    }
+
     async insertOne(document){
 
         const sanitisedDocument = Query.sanitiseDocument(document);
