@@ -1,19 +1,21 @@
 {
-    "name": "packagetemplate",
+    "name": "querycx",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
     "scripts": {
-      "test": "nodemon ./tests/index.js",
-      "dev": "nodemon index.js"
+        "test": "nodemon ./tests/index.js",
+        "test2": "nodemon ./tests/index2.js",
+        "dev": "nodemon index.js"
     },
     "keywords": [],
     "author": "",
-    "license": "ISC",
+    "license": "",
     "dependencies": {
+        "dotenv": "^16.3.1",
+        "mongodb": "^6.2.0"
     },
     "devDependencies": {
-      "nodemon": "^3.0.2"
+        "nodemon": "^3.0.2"
     }
-  }
-  
+}

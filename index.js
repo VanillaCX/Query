@@ -1,3 +1,3 @@
-const {DefaultModule} = require("./modules/default");
+const {Query} = require("./modules/Query");
 
-module.exports = {DefaultModule}
+module.exports = {Query}
