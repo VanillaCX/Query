@@ -3,11 +3,12 @@
 1. Install Package
   $ npm install
 2. Create .env file and add following environment variables:
-  Needed to connect to Cosmos DB
-  - QUERYCX_CONNECTION_STRING = "mongodb://..."
-  Needed for the test scripts 
-  - QUERYCX_DATABASE = "database-name"
-  - QUERYCX_COLLECTION = "database-collection"
+    // Required:
+    QUERYCX_CONNECTION_STRING = "mongodb://your/connection/string/here/..."
+
+    // Optional (required for test scripts only)
+    QUERYCX_DATABASE = "database-name"
+    QUERYCX_COLLECTION = "collection-name"
 3. npm run test
 
 ## Examples
