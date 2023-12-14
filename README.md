@@ -17,7 +17,7 @@ Make sure you have created the .env file and installed the package (See [Install
     
 ## Examples
     // Import Package
-    const {Query} = require("@VanillaCX/QueryCX");
+    const {Query} = require("@VanillaCX/Query");
 
     // Create a MongoDB client
     const query = new Query({
