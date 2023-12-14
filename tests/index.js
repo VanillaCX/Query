@@ -1,8 +1,8 @@
 const {Query} = require("../index.js");
 
 const query = new Query({
-    database: process.env.QUERYCX_DATABASE,
-    collection: process.env.QUERYCX_COLLECTION
+    database: process.env.TEST_DATABASE,
+    collection: process.env.TEST_COLLECTION
 });
 
 // FINDONE

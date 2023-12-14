@@ -4,11 +4,11 @@
        $ npm install
 #### Create .env file and add following environment variables:
       // Required:
-      QUERYCX_CONNECTION_STRING = "mongodb://your/connection/string/here/..."
+      COSMOS_CONNECTION_STRING = "mongodb://your/connection/string/here/..."
   
       // Optional (required for test scripts only)
-      QUERYCX_DATABASE = "database-name"
-      QUERYCX_COLLECTION = "collection-name"
+      TEST_DATABASE = "database-name"
+      TEST_COLLECTION = "collection-name"
 
 ## Test Script
 Make sure you have created the .env file and installed the package (See [Installation](#Installation)).
@@ -21,8 +21,8 @@ Make sure you have created the .env file and installed the package (See [Install
 
     // Create a MongoDB client
     const query = new Query({
-        database: process.env.QUERYCX_DATABASE,
-        collection: process.env.QUERYCX_COLLECTION
+        database: process.env.TEST_DATABASE,
+        collection: process.env.TEST_COLLECTION
     });
 ### FindOne
     try {

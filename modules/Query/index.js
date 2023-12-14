@@ -1,7 +1,7 @@
 require('dotenv').config();
 
 const { MongoClient } = require('mongodb');
-const connectionString = process.env.QUERYCX_CONNECTION_STRING;
+const connectionString = process.env.COSMOS_CONNECTION_STRING;
 const mongoClient = new MongoClient(connectionString);
 
 
